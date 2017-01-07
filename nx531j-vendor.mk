@@ -28,19 +28,13 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/nubia/nx531j/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/nubia/nx531j/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    vendor/nubia/nx531j/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/nubia/nx531j/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/nubia/nx531j/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     vendor/nubia/nx531j/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/nubia/nx531j/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/nubia/nx531j/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/nubia/nx531j/proprietary/bin/pm-service:system/bin/pm-service \
-    vendor/nubia/nx531j/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/nubia/nx531j/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/nubia/nx531j/proprietary/bin/radish:system/bin/radish \
-    vendor/nubia/nx531j/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/nubia/nx531j/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
-    vendor/nubia/nx531j/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/nubia/nx531j/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/nubia/nx531j/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/nubia/nx531j/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
@@ -103,17 +97,12 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/etc/permissions/com.quicinc.wbcservice.xml:system/etc/permissions/com.quicinc.wbcservice.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
-    vendor/nubia/nx531j/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
-    vendor/nubia/nx531j/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-    vendor/nubia/nx531j/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/nubia/nx531j/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/nubia/nx531j/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/nubia/nx531j/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/nubia/nx531j/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/nubia/nx531j/proprietary/framework/com.quicinc.wbc.jar:system/framework/com.quicinc.wbc.jar \
     vendor/nubia/nx531j/proprietary/framework/com.quicinc.wbcservice.jar:system/framework/com.quicinc.wbcservice.jar \
-    vendor/nubia/nx531j/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/nubia/nx531j/proprietary/lib/hw/audio.primary.msm8996.so:system/lib/hw/audio.primary.msm8996.so \
     vendor/nubia/nx531j/proprietary/lib/hw/camera.msm8996.so:system/lib/hw/camera.msm8996.so \
     vendor/nubia/nx531j/proprietary/lib/libFNVfbEngineHAL.so:system/lib/libFNVfbEngineHAL.so \
@@ -151,7 +140,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/lib64/libswscale.so:system/lib64/libswscale.so \
     vendor/nubia/nx531j/proprietary/vendor/bin/pd-mapper:system/vendor/bin/pd-mapper \
     vendor/nubia/nx531j/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
-    vendor/nubia/nx531j/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nubia/nx531j/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/hw/activity_recognition.msm8996.so:system/vendor/lib/hw/activity_recognition.msm8996.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/hw/gatekeeper.msm8996.so:system/vendor/lib/hw/gatekeeper.msm8996.so \
@@ -481,7 +469,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libcneconn.so:system/vendor/lib64/libcneconn.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
@@ -498,8 +485,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so \
@@ -509,7 +494,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmmcamera_dbg.so:system/vendor/lib64/libmmcamera_dbg.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:system/vendor/lib64/libmmcamera_tintless_algo.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
@@ -526,9 +510,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqmiservices.so:system/vendor/lib64/libqmiservices.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqti-wl.so:system/vendor/lib64/libqti-wl.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libsecureui.so:system/vendor/lib64/libsecureui.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
@@ -536,42 +517,52 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
-    vendor/nubia/nx531j/proprietary/vendor/qcril.db:system/vendor/qcril.db
+    vendor/nubia/nx531j/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so
 
 PRODUCT_PACKAGES += \
     libtime_genoff \
-    QtiTelephonyService \
     TimeService \
-    datastatusnotification \
     embms \
-    fastdormancy \
-    shutdownlistener \
     CNEService \
     QtiTetherService \
     dpmserviceapp \
-    qcrilmsgtunnel \
     com.qti.dpmframework \
     dpmapi \
-    qcrilhook \
     tcmclient
 PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/bin/energy-awareness:system/bin/energy-awareness \
+    vendor/nubia/nx531j/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/nubia/nx531j/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/nubia/nx531j/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
+    vendor/nubia/nx531j/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/nubia/nx531j/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/nubia/nx531j/proprietary/bin/radish:system/bin/radish \
+    vendor/nubia/nx531j/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/nubia/nx531j/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/nubia/nx531j/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/nubia/nx531j/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
+    vendor/nubia/nx531j/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/nubia/nx531j/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/nubia/nx531j/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/nubia/nx531j/proprietary/etc/qcril_db_diff.xml:system/etc/qcril_db_diff.xml \
+    vendor/nubia/nx531j/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/nubia/nx531j/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/nubia/nx531j/proprietary/framework/com.qualcomm.location.vzw_library.jar:system/framework/com.qualcomm.location.vzw_library.jar \
+    vendor/nubia/nx531j/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/nubia/nx531j/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
+    vendor/nubia/nx531j/proprietary/lib/libmodemapi.so:system/lib/libmodemapi.so \
+    vendor/nubia/nx531j/proprietary/lib/libztecfg.so:system/lib/libztecfg.so \
     vendor/nubia/nx531j/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
+    vendor/nubia/nx531j/proprietary/lib64/libmodemapi.so:system/lib64/libmodemapi.so \
+    vendor/nubia/nx531j/proprietary/lib64/libztecfg.so:system/lib64/libztecfg.so \
+    vendor/nubia/nx531j/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nubia/nx531j/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/nubia/nx531j/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/nubia/nx531j/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
@@ -580,6 +571,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libasn1cper.so:system/vendor/lib64/libasn1cper.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libasn1crt.so:system/vendor/lib64/libasn1crt.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libasn1crtx.so:system/vendor/lib64/libasn1crtx.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libevent_observer.so:system/vendor/lib64/libevent_observer.so \
@@ -594,19 +586,34 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
+    vendor/nubia/nx531j/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libthermalclient \
+    QtiTelephonyService \
+    datastatusnotification \
+    fastdormancy \
+    shutdownlistener \
     com.qualcomm.location \
+    qcrilmsgtunnel \
     ims \
-    imssettings
+    imssettings \
+    qcnvitems \
+    qcrilhook
 PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/bin/iop:system/bin/iop \
     vendor/nubia/nx531j/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
