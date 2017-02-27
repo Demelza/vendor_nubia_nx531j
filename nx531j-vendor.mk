@@ -44,6 +44,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
     vendor/nubia/nx531j/proprietary/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/nubia/nx531j/proprietary/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
+    vendor/nubia/nx531j/proprietary/etc/camera/imx179_chromatix.xml:system/etc/camera/imx179_chromatix.xml \
+    vendor/nubia/nx531j/proprietary/etc/camera/imx298_ois_chromatix.xml:system/etc/camera/imx298_ois_chromatix.xml \
     vendor/nubia/nx531j/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/nubia/nx531j/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/nubia/nx531j/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
@@ -71,7 +73,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/nubia/nx531j/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/nubia/nx531j/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
-    vendor/nubia/nx531j/proprietary/etc/firmware/cyttsp5_fw.bin:system/etc/firmware/cyttsp5_fw.bin \
     vendor/nubia/nx531j/proprietary/etc/firmware/nubia_tp_jdi_fw.img:system/etc/firmware/nubia_tp_jdi_fw.img \
     vendor/nubia/nx531j/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
     vendor/nubia/nx531j/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
@@ -85,10 +86,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
     vendor/nubia/nx531j/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
     vendor/nubia/nx531j/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
-    vendor/nubia/nx531j/proprietary/etc/modem_ota/CM/mcfg_sw.mbn:system/etc/modem_ota/CM/mcfg_sw.mbn \
-    vendor/nubia/nx531j/proprietary/etc/modem_ota/CT/mcfg_sw.mbn:system/etc/modem_ota/CT/mcfg_sw.mbn \
-    vendor/nubia/nx531j/proprietary/etc/modem_ota/CU/mcfg_sw.mbn:system/etc/modem_ota/CU/mcfg_sw.mbn \
-    vendor/nubia/nx531j/proprietary/etc/modem_ota/ROW/mcfg_sw.mbn:system/etc/modem_ota/ROW/mcfg_sw.mbn \
     vendor/nubia/nx531j/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
@@ -106,25 +103,35 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/lib/hw/audio.primary.msm8996.so:system/lib/hw/audio.primary.msm8996.so \
     vendor/nubia/nx531j/proprietary/lib/hw/camera.msm8996.so:system/lib/hw/camera.msm8996.so \
     vendor/nubia/nx531j/proprietary/lib/libFNVfbEngineHAL.so:system/lib/libFNVfbEngineHAL.so \
-    vendor/nubia/nx531j/proprietary/lib/libImageAlogrithm.so:system/lib/libImageAlogrithm.so \
+    vendor/nubia/nx531j/proprietary/lib/libNubiaImageAlgorithm.so:system/lib/libNubiaImageAlgorithm.so \
+    vendor/nubia/nx531j/proprietary/lib/libNubiaxmptoolkit.so:system/lib/libNubiaxmptoolkit.so \
+    vendor/nubia/nx531j/proprietary/lib/libalRnB.so:system/lib/libalRnB.so \
+    vendor/nubia/nx531j/proprietary/lib/libalSDE2.so:system/lib/libalSDE2.so \
+    vendor/nubia/nx531j/proprietary/lib/libalsautils.so:system/lib/libalsautils.so \
+    vendor/nubia/nx531j/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so \
     vendor/nubia/nx531j/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/nubia/nx531j/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/nubia/nx531j/proprietary/lib/libmmcamera_nubiacustpro.so:system/lib/libmmcamera_nubiacustpro.so \
     vendor/nubia/nx531j/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/nubia/nx531j/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so \
+    vendor/nubia/nx531j/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/nubia/nx531j/proprietary/lib/libnubia_effect.so:system/lib/libnubia_effect.so \
     vendor/nubia/nx531j/proprietary/lib/libnubiajpeg.so:system/lib/libnubiajpeg.so \
     vendor/nubia/nx531j/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/nubia/nx531j/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/nubia/nx531j/proprietary/lib64/hw/audio.primary.msm8996.so:system/lib64/hw/audio.primary.msm8996.so \
     vendor/nubia/nx531j/proprietary/lib64/hw/fingerprint.msm8996.so:system/lib64/hw/fingerprint.msm8996.so \
-    vendor/nubia/nx531j/proprietary/lib64/hw/sensors.oem.so:system/lib64/hw/sensors.oem.so \
     vendor/nubia/nx531j/proprietary/lib64/libAlgorithm.so:system/lib64/libAlgorithm.so \
     vendor/nubia/nx531j/proprietary/lib64/libBuffer.so:system/lib64/libBuffer.so \
     vendor/nubia/nx531j/proprietary/lib64/libBurstProcessJni.so:system/lib64/libBurstProcessJni.so \
     vendor/nubia/nx531j/proprietary/lib64/libFNVfbEngineLib.so:system/lib64/libFNVfbEngineLib.so \
-    vendor/nubia/nx531j/proprietary/lib64/libImageAlogrithm.so:system/lib64/libImageAlogrithm.so \
     vendor/nubia/nx531j/proprietary/lib64/libIndependenceUtil.so:system/lib64/libIndependenceUtil.so \
+    vendor/nubia/nx531j/proprietary/lib64/libNubiaImageAlgorithm.so:system/lib64/libNubiaImageAlgorithm.so \
+    vendor/nubia/nx531j/proprietary/lib64/libNubiaxmptoolkit.so:system/lib64/libNubiaxmptoolkit.so \
     vendor/nubia/nx531j/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
+    vendor/nubia/nx531j/proprietary/lib64/libalRnB.so:system/lib64/libalRnB.so \
+    vendor/nubia/nx531j/proprietary/lib64/libalSDE2.so:system/lib64/libalSDE2.so \
+    vendor/nubia/nx531j/proprietary/lib64/libalsautils.so:system/lib64/libalsautils.so \
     vendor/nubia/nx531j/proprietary/lib64/libavcodec.so:system/lib64/libavcodec.so \
     vendor/nubia/nx531j/proprietary/lib64/libavfilter.so:system/lib64/libavfilter.so \
     vendor/nubia/nx531j/proprietary/lib64/libavformat.so:system/lib64/libavformat.so \
@@ -136,8 +143,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/lib64/libnubiajpeg.so:system/lib64/libnubiajpeg.so \
     vendor/nubia/nx531j/proprietary/lib64/libpanoramahelper.so:system/lib64/libpanoramahelper.so \
     vendor/nubia/nx531j/proprietary/lib64/libproductinfo.so:system/lib64/libproductinfo.so \
+    vendor/nubia/nx531j/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
     vendor/nubia/nx531j/proprietary/lib64/libswresample.so:system/lib64/libswresample.so \
     vendor/nubia/nx531j/proprietary/lib64/libswscale.so:system/lib64/libswscale.so \
+    vendor/nubia/nx531j/proprietary/lib64/sensors.oem.so:system/lib64/sensors.oem.so \
     vendor/nubia/nx531j/proprietary/vendor/bin/pd-mapper:system/vendor/bin/pd-mapper \
     vendor/nubia/nx531j/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
     vendor/nubia/nx531j/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
@@ -158,6 +167,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libactuator_ad5816g.so:system/vendor/lib/libactuator_ad5816g.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libactuator_ad5823.so:system/vendor/lib/libactuator_ad5823.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libactuator_ak7345.so:system/vendor/lib/libactuator_ak7345.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libactuator_ak7371.so:system/vendor/lib/libactuator_ak7371.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libactuator_bu64244gwz.so:system/vendor/lib/libactuator_bu64244gwz.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libactuator_bu64297.so:system/vendor/lib/libactuator_bu64297.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
@@ -176,11 +187,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libaudiodevarb.so:system/vendor/lib/libaudiodevarb.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_csidtg_common.so:system/vendor/lib/libchromatix_csidtg_common.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_csidtg_cpp_preview.so:system/vendor/lib/libchromatix_csidtg_cpp_preview.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_csidtg_postproc.so:system/vendor/lib/libchromatix_csidtg_postproc.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_csidtg_preview.so:system/vendor/lib/libchromatix_csidtg_preview.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_csidtg_zsl_preview.so:system/vendor/lib/libchromatix_csidtg_zsl_preview.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx179_a3_default_preview.so:system/vendor/lib/libchromatix_imx179_a3_default_preview.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx179_a3_default_video.so:system/vendor/lib/libchromatix_imx179_a3_default_video.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx179_a3_nbawb.so:system/vendor/lib/libchromatix_imx179_a3_nbawb.so \
@@ -223,6 +230,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_a3_light_painting.so:system/vendor/lib/libchromatix_imx298_ois_a3_light_painting.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_a3_panorama.so:system/vendor/lib/libchromatix_imx298_ois_a3_panorama.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_a3_preview_lowpower.so:system/vendor/lib/libchromatix_imx298_ois_a3_preview_lowpower.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_a3_profession_mode.so:system/vendor/lib/libchromatix_imx298_ois_a3_profession_mode.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_a3_startrack.so:system/vendor/lib/libchromatix_imx298_ois_a3_startrack.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_a3_zsl_preview.so:system/vendor/lib/libchromatix_imx298_ois_a3_zsl_preview.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_a3_zsl_video.so:system/vendor/lib/libchromatix_imx298_ois_a3_zsl_video.so \
@@ -234,9 +242,12 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx298_ois_cpp_hfr_60.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_light_painting.so:system/vendor/lib/libchromatix_imx298_ois_cpp_light_painting.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_liveshot.so:system/vendor/lib/libchromatix_imx298_ois_cpp_liveshot.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_microspur_snapshot.so:system/vendor/lib/libchromatix_imx298_ois_cpp_microspur_snapshot.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_mtf_denoise.so:system/vendor/lib/libchromatix_imx298_ois_cpp_mtf_denoise.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_panorama.so:system/vendor/lib/libchromatix_imx298_ois_cpp_panorama.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_pre_lowpower.so:system/vendor/lib/libchromatix_imx298_ois_cpp_pre_lowpower.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_preview.so:system/vendor/lib/libchromatix_imx298_ois_cpp_preview.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_profession_snapshot.so:system/vendor/lib/libchromatix_imx298_ois_cpp_profession_snapshot.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_snap_lowpower.so:system/vendor/lib/libchromatix_imx298_ois_cpp_snap_lowpower.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_snapshot.so:system/vendor/lib/libchromatix_imx298_ois_cpp_snapshot.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx298_ois_cpp_snapshot_hdr.so \
@@ -253,6 +264,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_isp_liveshot.so:system/vendor/lib/libchromatix_imx298_ois_isp_liveshot.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_isp_panorama.so:system/vendor/lib/libchromatix_imx298_ois_isp_panorama.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_isp_preview.so:system/vendor/lib/libchromatix_imx298_ois_isp_preview.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_isp_profession_mode.so:system/vendor/lib/libchromatix_imx298_ois_isp_profession_mode.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_isp_slowshutter.so:system/vendor/lib/libchromatix_imx298_ois_isp_slowshutter.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_isp_snap_lowpower.so:system/vendor/lib/libchromatix_imx298_ois_isp_snap_lowpower.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libchromatix_imx298_ois_isp_snapshot.so:system/vendor/lib/libchromatix_imx298_ois_isp_snapshot.so \
@@ -278,12 +290,12 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libjni_dualcamera.so:system/vendor/lib/libjni_dualcamera.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
@@ -301,13 +313,14 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_csidtg.so:system/vendor/lib/libmmcamera_csidtg.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_dbg.so:system/vendor/lib/libmmcamera_dbg.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_dummyalgo.so:system/vendor/lib/libmmcamera_dummyalgo.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_dw9761b_eeprom.so:system/vendor/lib/libmmcamera_dw9761b_eeprom.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_eebinparse.so:system/vendor/lib/libmmcamera_eebinparse.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_eeprom_util.so:system/vendor/lib/libmmcamera_eeprom_util.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_eztune_module.so:system/vendor/lib/libmmcamera_eztune_module.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:system/vendor/lib/libmmcamera_facedetection_lib.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_hvx_add_constant.so:system/vendor/lib/libmmcamera_hvx_add_constant.so \
@@ -359,28 +372,36 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_isp_snr47.so:system/vendor/lib/libmmcamera_isp_snr47.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:system/vendor/lib/libmmcamera_isp_sub_module.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_le2464c_master_eeprom.so:system/vendor/lib/libmmcamera_le2464c_master_eeprom.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_llvd.so:system/vendor/lib/libmmcamera_llvd.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_paaf_lib.so:system/vendor/lib/libmmcamera_paaf_lib.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_s5k3l8.so:system/vendor/lib/libmmcamera_s5k3l8.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_ppeiscore.so:system/vendor/lib/libmmcamera_ppeiscore.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_sony_imx179_eeprom.so:system/vendor/lib/libmmcamera_sony_imx179_eeprom.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_sony_imx298_ois_eeprom.so:system/vendor/lib/libmmcamera_sony_imx298_ois_eeprom.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_sunny_8865_eeprom.so:system/vendor/lib/libmmcamera_sunny_8865_eeprom.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmcamera_vpu_module.so:system/vendor/lib/libmmcamera_vpu_module.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
@@ -400,15 +421,17 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libqti-wl.so:system/vendor/lib/libqti-wl.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/mmi_camera.so:system/vendor/lib/mmi_camera.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
@@ -419,11 +442,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so:system/vendor/lib/rfsa/adsp/libvpp_svc_skel.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/rfsa/adsp/us-syncproximity.so:system/vendor/lib/rfsa/adsp/us-syncproximity.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/soundfx/libhwdap.so:system/vendor/lib/soundfx/libhwdap.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib/soundfx/libswdap.so:system/vendor/lib/soundfx/libswdap.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/hw/activity_recognition.msm8996.so:system/vendor/lib64/hw/activity_recognition.msm8996.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/hw/gatekeeper.msm8996.so:system/vendor/lib64/hw/gatekeeper.msm8996.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
@@ -481,11 +502,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libhwdaphal.so:system/vendor/lib64/libhwdaphal.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmmcamera2_is.so:system/vendor/lib64/libmmcamera2_is.so \
@@ -499,6 +518,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libqfp-service.so:system/vendor/lib64/libqfp-service.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqisl.so:system/vendor/lib64/libqisl.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so \
@@ -521,6 +541,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/qfp.wakeup.so:system/vendor/lib64/qfp.wakeup.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so
 
 PRODUCT_PACKAGES += \
