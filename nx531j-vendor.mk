@@ -100,7 +100,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/lib/libNubiaxmptoolkit.so:system/lib/libNubiaxmptoolkit.so \
     vendor/nubia/nx531j/proprietary/lib/libalRnB.so:system/lib/libalRnB.so \
     vendor/nubia/nx531j/proprietary/lib/libalSDE2.so:system/lib/libalSDE2.so \
-    vendor/nubia/nx531j/proprietary/lib/libalsautils.so:system/lib/libalsautils.so \
     vendor/nubia/nx531j/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so \
     vendor/nubia/nx531j/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/nubia/nx531j/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -125,7 +124,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/nubia/nx531j/proprietary/lib64/libalRnB.so:system/lib64/libalRnB.so \
     vendor/nubia/nx531j/proprietary/lib64/libalSDE2.so:system/lib64/libalSDE2.so \
-    vendor/nubia/nx531j/proprietary/lib64/libalsautils.so:system/lib64/libalsautils.so \
     vendor/nubia/nx531j/proprietary/lib64/libavcodec.so:system/lib64/libavcodec.so \
     vendor/nubia/nx531j/proprietary/lib64/libavfilter.so:system/lib64/libavfilter.so \
     vendor/nubia/nx531j/proprietary/lib64/libavformat.so:system/lib64/libavformat.so \
